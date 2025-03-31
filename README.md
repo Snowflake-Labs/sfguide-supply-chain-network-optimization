@@ -39,7 +39,7 @@ We are solving the problem with three different objectives... emulating a "crawl
 This is also a cost optimization model... it assumes you have to ship every customer their demand, even if it is a money-losing shipment.  To flip it to a "what customers should I ship to?", you would adjust the objective function to a profit maximimization model, and you would need to tie in revenue to it - first by adding price to every current customer, and adding every potential customer you know about and estimates of their volume/price/freight costs.
 
 ## Cortex
-In addition to making an optimal decision set for over 25k decisions, we can also leverage Snowflake's Cortex Large Language Model (LLM) functionality.  It is in Preview still, but this gives us a good view into how we can leverage AI for enriching our supply chain data in an effort to understand the broader context of the supply chain.  Our examples add a few new fields that are generated through prompts.
+In addition to making an optimal decision set for over 25k decisions, we can also leverage Snowflake's Cortex Large Language Model (LLM) functionality.  This gives us a good view into how we can leverage AI for enriching our supply chain data in an effort to understand the broader context of the supply chain.  Our examples add a few new fields that are generated through prompts.
 
 **Note** - AI is an imprecise science that is improving every day, so it is important to check results for reasonableness and to understand that values are approximate.  It is perfect for adding some additional flavor to our data, but is not ideal for analyzing our model results.
 
